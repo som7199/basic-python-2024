@@ -3,6 +3,7 @@
 # spec : for문 잘 써야함, 2중 for문의 이해
 # debugging
 # F9(중단점 토글), F5(디버그 시작), F10(한줄씩 실행), F11(함수 안으로 진입)
+# Shift + F5(디버깅 종료)
 
 for x in range(2, 10):
     print(f'[{x}단] =>', end = ' ')
