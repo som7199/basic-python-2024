@@ -95,11 +95,12 @@
     f.write('text') # 쓰기
     f.close()       # 파일은 반드시 닫는다!
     ```
-    - 가상환경
 
 - 파이썬 활용
     - 주피터 노트북
-
+        - Ctrl + Shift + P (명령팔레트)로 시작
+        - 사용방법 (test31_jupyternb.ipynb 참조)
+    - folium 지도 연동
 
 ## 언젠가
     - 객체지향(나중에...)
