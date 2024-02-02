@@ -96,12 +96,17 @@
     f.close()       # 파일은 반드시 닫는다!
     ```
 
-- 파이썬 활용
+- 파이썬 응용
     - 주피터 노트북
         - Ctrl + Shift + P (명령팔레트)로 시작
         - 사용방법 (test31_jupyternb.ipynb 참조)
-    - folium 지도 연동
+    - folium 기본 사용
+    ![folium 사용법](https://github.com/som7199/basic-python-2024/blob/main/images/python_001.png)
 
+## 5일차
+- 파이썬 응용
+    - 주피터 노트북 활용 - 구글 코랩(Colab)
+    
 ## 언젠가
     - 객체지향(나중에...)
         - 오버로딩, 오버라이딩
