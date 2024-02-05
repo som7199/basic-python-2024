@@ -111,9 +111,24 @@
     - 응용예제 연습
         - IP주소 확인
         - QRCODE 만들기
+
+## 6일차
+- Python 라이브러리 경로 : C:\DEV\Langs\Python312\Lib\site-packages
+- 파이썬 응용
+    - Window App(PyQt) 만들기
+    ```shell
+    > pip install PyQt5
+    > pip install PyQt5Designer
+    ```
+    - PyQt5 기본 실행
+    - QtDesigner 사용법
+    - ☆☆☆ 쓰레드 학습 : UI쓰레드와 Background쓰레드 분리
+        - GIL, 병렬프로세싱 더 학습할 것!!
+    ![쓰레드 예제](https://github.com/som7199/basic-python-2024/blob/main/images/python_003.gif)
+
+- 가상환경
     
 ## 언젠가
-- 가상환경
 - 객체지향(나중에...)
     - 오버로딩, 오버라이딩
     - 상속, 다중상속
