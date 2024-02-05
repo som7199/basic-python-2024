@@ -124,8 +124,32 @@
     - QtDesigner 사용법
     - ☆☆☆ 쓰레드 학습 : UI쓰레드와 Background쓰레드 분리
         - GIL, 병렬프로세싱 더 학습할 것!!
-        
+
     ![쓰레드 예제](https://github.com/som7199/basic-python-2024/blob/main/images/python_003.gif)
+    ```python
+    # 쓰레드 클래스에서 시그널 선언
+    class BackWorker(QThread):  # PyQt에서 쓰레드 클래스 상속
+        initSignal = pyqtSignal(int)    # 시그널을 UI쓰레드로 전달하기 위한 변수 객체
+        setSignal = pyqtSignal(int)
+        setLog = pyqtSignal(str)
+        # ...
+        def run(self) -> None:  # 쓰레드 실행
+            # 쓰레드로 동작할 내용
+            maxVal = 100001
+            self.initSignal.emit(maxVal)    # UI쓰레드로 보내기
+            # ...
+
+    class qtwin_exam(QWidget):  # UI쓰레드
+        # ...
+        def btnStartClicked(self):
+        th = BackWorker(self)
+        th.start()  # BackWorker 내의 self.run() 실행
+        th.initSignal.connect(self.initPgbTask) # 쓰레드에서 초기화 시그널이 오면 initPgbTask 슬롯함수가 대신 처리
+        th.setSignal.connect(self.setPgbTask)
+        th.setLog.connect(self.setTxbLog)   # TextBrowser 위젯에 진행사항 출력
+        # ...
+
+    ```
 
 - 가상환경
     
