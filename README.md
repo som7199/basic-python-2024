@@ -124,6 +124,7 @@
     - QtDesigner 사용법
     - ☆☆☆ 쓰레드 학습 : UI쓰레드와 Background쓰레드 분리
         - GIL, 병렬프로세싱 더 학습할 것!!
+        
     ![쓰레드 예제](https://github.com/som7199/basic-python-2024/blob/main/images/python_003.gif)
 
 - 가상환경
