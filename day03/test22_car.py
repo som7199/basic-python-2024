@@ -35,7 +35,6 @@ class Car:
     def getPlateNumber(self):
         return self.__plate_num
     
-    # 
     def setPlateNumber(self, new_plateNumber):
         self.__plate_num = new_plateNumber
 
